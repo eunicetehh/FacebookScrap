@@ -23,10 +23,10 @@ password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SE
 # enter username and password
 username.clear()
 
-username.send_keys("happyeunn@gmail.com")
+username.send_keys("YOUR EMAIL")
 password.clear()
 # use your username and password
-password.send_keys("Zeu)K\"78")
+password.send_keys("YOUR PASSWORD")
 
 # target the login button and click it
 time.sleep(5)
@@ -34,18 +34,6 @@ button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELEC
 
 # We are logged in!
 print("Logged in")
-
-
-# program to parse username who posted comment
-# def Nameparse():
-#     driver.get(url)
-#     names = driver.find_elements(by=By.XPATH, value='/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[4]/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div[4]/div/div/div[2]/ul/li[1]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/div/span/a/span/span')
-#     for name in names:
-#         name = name.text
-#         if name == 'Eunice Teh':  # Omitting Narendra modi name from parsed list
-#             continue
-#         Name.append(name)
-
 
 # program to parse comments
 def Commentparse():
